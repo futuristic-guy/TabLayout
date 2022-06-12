@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         tabs = findViewById(R.id.tabs)
         fragmentAdapter = ViewPagerFragmentAdapter(this)
 
+        // Adding Fragments
         fragmentAdapter.addFragment(HomeFragment(), "Home", R.drawable.ic_home)
         fragmentAdapter.addFragment(FavFragment(), "Favourite", R.drawable.ic_favorite)
         fragmentAdapter.addFragment(SettingsFragment(), "Settings", R.drawable.ic_settings)
