@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
         fragmentAdapter.addFragment(FavFragment(), "Favourite", R.drawable.ic_favorite)
         fragmentAdapter.addFragment(SettingsFragment(), "Settings", R.drawable.ic_settings)
 
-        // Setting Adapter
+        // Setting Adapter for Viewpager
         viewPager.adapter = fragmentAdapter
         TabLayoutMediator(tabs,viewPager){tabs,position ->
             tabs.text = fragmentAdapter.getPageTitle(position)
             tabs.setIcon(fragmentAdapter.getTabIcon(position))
         }.attach()
-
+        // End
 
     }
 
