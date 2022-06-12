@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             tabs.text = fragmentAdapter.getPageTitle(position)
             tabs.setIcon(fragmentAdapter.getTabIcon(position))
         }.attach()
-
+        // End
 
     }
 
